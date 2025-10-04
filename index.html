@@ -1,20 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CineHome</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Fonte Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
+  <!-- HEADER -->
   <header class="header">
     <div class="logo">CINE<span>HOME</span></div>
     <div class="search-bar">
       <input type="text" placeholder="Pesquisar filmes...">
-      <button><img src="lupinha.png" class="icon"></button>
+      <button><img src="lupinha.png" class="icon" alt="Pesquisar"></button>
     </div>
   </header>
+
+  <!-- SECTION DEADPOOL -->
+  <div class="DEADPOOL2">
+    <div class="deadpool-text">
+      <h1>DEADPOOL 2</h1>
+      <span>Assim como o primeiro Deadpool, é espetacular. </span>
+      <span>É outra obra-prima de ação, aventura e comédia. </span>
+      <span>Ryan Reynolds foi a melhor escolha para interpretar Deadpool.</span>
+
+      <a href="#" class="btn-assista">ASSISTA JÁ</a>
+    </div>
+
+    <div class="frame">
+      <img src="deadpool.jpg" alt="Deadpool">
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item active" id="btn-home">Página Inicial</li>
+      <li class="nav-item">Suspense</li>
+      <li class="nav-item">Drama</li>
+      <li class="nav-item">Ação</li>
+      <li class="nav-item">Ficção</li>
+      <li class="nav-item">Comédia</li>
+      <div class="nav-indicator"></div>
+    </ul>
+  </nav>
+
+  <!--  PÁGINA INICIAL -->
+  <div id="home-sections">
+    <div class="section" id="top10">
+      <h2>TOP 10 🔥</h2>
+      <div class="carousel">
+        <button class="arrow left">&#10095;</button>
+        <div class="carousel-track">
+         <div class="movie"><img src="18.jpg" alt="Filme"></div>
+          <div class="movie"><img src="19.jpg" alt="Filme"></div>
+          <div class="movie"><img src="20.jpg" alt="Filme"></div>
+          <div class="movie"><img src="21.jpg" alt="Filme"></div>
+           <div class="movie"><img src="23.jpg" alt="Filme"></div>
+            <div class="movie"><img src="24.jpg" alt="Filme"></div>
+             <div class="movie"><img src="25.jpg" alt="Filme"></div>
+              <div class="movie"><img src="26.jpg" alt="Filme"></div>
+        </div>
+        <button class="arrow right">&#10095;</button>
+      </div>
+    </div>
+
+    <div class="section" id="favoritos">
+      <h2>SEUS FAVORITOS ⭐</h2>
+      <div class="carousel">
+        <button class="arrow left">&#10095;</button>
+        <div class="carousel-track">
+          <div class="movie"><img src="17.jpg" alt="Filme"></div>
+          <div class="movie"><img src="10.jpg" alt="Filme"></div>
+          <div class="movie"><img src="11.jpg" alt="Filme"></div>
+          <div class="movie"><img src="12.jpg" alt="Filme"></div>
+           <div class="movie"><img src="13.jpg" alt="Filme"></div>
+            <div class="movie"><img src="14.jpg" alt="Filme"></div>
+             <div class="movie"><img src="15.jpg" alt="Filme"></div>
+              <div class="movie"><img src="16.jpg" alt="Filme"></div>
+        </div>
+        <button class="arrow right">&#10095;</button>
+      </div>
+    </div>
+
+    <div class="section" id="sugestoes">
+      <h2>VOCÊ PODE GOSTAR 😍</h2>
+      <div class="carousel">
+        <button class="arrow left">&#10095;</button>
+        <div class="carousel-track">
+          <div class="movie"><img src="2.jpg" alt="Filme"></div>
+          <div class="movie"><img src="3.jpg" alt="Filme"></div>
+          <div class="movie"><img src="7.jpg" alt="Filme"></div>
+          <div class="movie"><img src="8.jpg" alt="Filme"></div>
+           <div class="movie"><img src="5.jpg" alt="Filme"></div>
+            <div class="movie"><img src="1.jpg" alt="Filme"></div>
+             <div class="movie"><img src="6.jpg" alt="Filme"></div>
+              <div class="movie"><img src="4.jpg" alt="Filme"></div>
+         
+        </div>
+        <button class="arrow right">&#10095;</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+  
 </body>
+
 </html>

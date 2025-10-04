@@ -71,3 +71,293 @@ body {
   height: 20px;
 }
 
+.DEADPOOL2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a; 
+  border-radius: 20px;
+  padding: 20px;
+  margin: 40px;
+  overflow: hidden;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  gap: 20px;
+}
+
+
+.deadpool-text {
+  max-width: 30%;
+}
+
+.deadpool-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.deadpool-text span {
+  margin-bottom: 10px;
+  line-height: 1.4;
+  color: #cccccc;
+}
+
+
+.btn-assista {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #5f5dff; 
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: background 0.3s;
+}
+
+.btn-assista:hover {
+  background-color: #1814fa;
+}
+
+
+.frame {
+  max-width: 75%;
+}
+
+.frame img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 0 30px rgba(99, 91, 255, 0.5);
+}
+
+
+@media (max-width: 900px) {
+  .DEADPOOL2 {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .deadpool-text, .frame {
+    max-width: 100%;
+  }
+  
+  .frame img {
+    margin-top: 20px;
+  }
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.movie {
+  min-width: 150px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border 0.3s;
+}
+
+.movie img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.movie:hover {
+  border: 2px solid #5c6bc0;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(20, 20, 20, 0.6);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.arrow.left {
+  left: 0;
+}
+
+.arrow.right {
+  right: 0;
+}
+
+.arrow:hover {
+  background-color: rgba(92, 107, 192, 0.8);
+}
+.navbar {
+  position: relative;
+  background: #111; 
+  padding: 10px 20px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 60px;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-item.active {
+  color: #fff;
+}
+
+.nav-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 120px; 
+  height: 4px;
+  background-color: #4f46e5; 
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+
+#top10 .movie img,
+#favoritos .movie img,
+#sugestoes .movie img {
+  width: 160px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+@media (max-width: 900px) {
+  #top10 .movie img,
+  #favoritos .movie img,
+  #sugestoes .movie img {
+    width: 130px;
+    height: 200px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  #top10 .movie img,
+  #favoritos .movie img,
+  #sugestoes .movie img {
+    width: 100px;
+    height: 150px;
+  }
+}
+/* --- Responsive Ajustements --- */
+
+/* Tablettes */
+@media (max-width: 1024px) {
+  .search-bar {
+    width: 70%;
+  }
+
+  .nav-item {
+    margin: 0 30px; /* réduit l’espace entre les items */
+  }
+}
+
+/* Smartphones grands (≤ 900px) */
+@media (max-width: 900px) {
+  .DEADPOOL2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .deadpool-text,
+  .frame {
+    max-width: 100%;
+  }
+
+  .frame img {
+    margin-top: 20px;
+  }
+
+  .nav-list {
+    justify-content: center;
+    flex-wrap: wrap; /* permet de passer à la ligne */
+  }
+
+  .nav-item {
+    margin: 10px 20px;
+  }
+}
+
+/* Smartphones petits (≤ 600px) */
+@media (max-width: 600px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .search-bar {
+    width: 90%;
+    padding: 6px 10px;
+  }
+
+  .nav-item {
+    margin: 8px 10px;
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Très petits écrans (≤ 400px) */
+@media (max-width: 400px) {
+  .nav-item {
+    margin: 5px;
+    font-size: 0.8rem;
+  }
+
+  .btn-assista {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .deadpool-text h1 {
+    font-size: 1.8rem;
+  }
+}
+
