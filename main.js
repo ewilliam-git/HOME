@@ -15,7 +15,7 @@ if (items.length && indicator && homeSections) {
 
   items.forEach(item => {
     item.addEventListener('click', () => {
-      // Changer l'élément actif
+      
       const activeItem = document.querySelector('.nav-item.active');
       if (activeItem) activeItem.classList.remove('active');
       item.classList.add('active');
